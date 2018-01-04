@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- include css files -->
+	<link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<!-- include js files -->
+	<script type="text/javascript" src="assets/js/angular.min.js"></script>
+	<script type="text/javascript" src="assets/js/angular-route.min.js"></script>
+	<script type="text/javascript" src="assets/js/angular-resource.min.js"></script>
+	<script type="text/javascript" src="assets/js/ui-bootstrap.min.js"></script>
+	<script type="text/javascript" src="app/shared/auth/authService.js"></script>
+	<script type="text/javascript" src="app/app.module.js"></script>
+	<script type="text/javascript" src="app/app.routes.js"></script>
+	<!-- include user app data -->
+	<script type="text/javascript" src="app/components/user/userController.js"></script>
+	<script type="text/javascript" src="app/components/user/userDirective.js"></script>
+	<script type="text/javascript" src="app/components/user/userService.js"></script>
+	<!-- include purchase app data -->
+	<script type="text/javascript" src="app/components/purchase/purchaseController.js"></script>
+	<script type="text/javascript" src="app/components/purchase/purchaseDirective.js"></script>
+	<script type="text/javascript" src="app/components/purchase/purchaseService.js"></script>
+	<!-- include purchase category app data -->
+	<script type="text/javascript" src="app/components/purchase-category/purchaseCategoryService.js"></script>
+</head>
+<body ng-app="spending">
+	<div class="container">
+		<!-- <div ng-include='"app/shared/partials/header.html"'></div> -->
+		<div class="ng-cloak" ng-view ng-cloak></div>
+	</div>
+</body>
+</html>

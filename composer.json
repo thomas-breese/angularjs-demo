@@ -1,0 +1,8 @@
+{
+    "require": {
+        "slim/slim": "^3.0",
+        "tuupola/slim-jwt-auth": "^2.3",
+        "tuupola/base62": "^0.9.0",
+        "paragonie/random_compat": "^2.0"
+    }
+}
